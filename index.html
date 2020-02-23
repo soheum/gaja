@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="bootstrap-grid.css" rel="stylesheet">
+  <link href="bootstrap-grid.min.css" rel="stylesheet">
+  <link href="stylesheet2.css" rel="stylesheet">
+  <link href="./webfontkit-20200114-115319/stylesheet.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+  <link rel="stylesheet" href="fullpage.css"/>
+  <script type="text/javascript" src="paper-core.js"></script>
+  <script type="text/javascript" src="paper-full.js"></script>
+  <script type="text/javascript" src="gaja3.js"></script>
+  <title>GAJA</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="header col-xl-7 col-lg-7 col-md-12 col-sm-12"></div>
+      <div class="header col-xl-5 col-lg-5 col-md-12 col-sm-12">
+        <a href="#four"><h4 style="float: right; margin-right: 3%;">members</h4></a>
+        <a href="#three"><h4 style="float: right; margin-right: 3%;">news</h4></a>
+        <a href="#two"><h4 style="float: right; margin-right: 3%;">projects</h4></a>
+        <a href="#one"><h4 style="float: right; margin-right: 3%;">about us</h4></a>
+      </div>
+      <div class="w-100"></div>
+    </div>
+    <div class="row" id="#one">
+      <div class="col-xl-6 content">
+        <div class="text">
+          <h5>click and drag around the screen to transport!</h5>
+        </div>
+        <div class="bike rainbow-pixel-canvas">
+          <canvas class="rainbow-pixel-canvas" width="100%" height="100%"></canvas>
+          <div id="overlay"></div>
+            <img style="display: none; width: 10%;" id="bikeAppear" src="bike1.png" alt="">
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="illustration">
+          <img src="./gaja_whitelogo.png" alt="" id="illustration">
+        </div>
+        <p style="margin-top: 5%;">GAJA is a thinktank in Korea that performs research
+  related to sustainable city development in the
+  transportation sector. With having its focus on
+  controversial mobility issues in Korea, GAJA works for promoting a sustainable future of
+  public transportation and micromobility.</p>
+      </div>
+    </div>
+
+    <div class="row" id="two">
+      <div class="col-12 title">
+        <h4>GAJA Projects</h4>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <img class="img_projects" src="project1.png" alt="">
+        <h3 style="text-align: center;">Sustainable Mobility Solution Campaign</h3>
+        <p style="text-align: center; margin-top: 2%; line-height: 1.5rem;">Raising public awareness is needed for sustainable mobility solutions and GAJA opens campaigns for a general change of consciousness.</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <img class="img_projects" src="project2.png" alt="">
+        <h3 style="text-align: center;">Mobility Startup Sessions</h3>
+        <p style="text-align: center; margin-top: 2%; line-height: 1.5rem;">In order to reach a consensus between taxi companies and mobility startups, GAJA constantly promotes sessions for legislation changes</p>
+      </div>
+      <div class="col-xl-4">
+        <img class="img_projects" src="project3.png" alt="">
+        <h3 style="text-align: center;">Biannual Mobility Research Report</h3>
+        <p style="text-align: center; margin-top: 2%; line-height: 1.5rem;">GAJA publishes mobility research
+  reports twice a year in order to keep track of statistics in the mobility sector in Korea.</p>
+      </div>
+    </div>
+
+    <div class="row" id="three">
+      <div class="col-12 title">
+        <h4>GAJA News</h4>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-12 seemore">
+        <p class="seemore_p">See More</p>
+      </div>
+      <div class="news col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <img class="img" src="dark1.png" alt="" id="dark1">
+        <h3 class="news_title">GAJA publishes new report about micromobility</h3>
+        <h6 class="news_detail">JoongAngDaily, 17th Jan 2020</h6>
+
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <img class="img" src="dark2.png" alt="" id="dark2">
+        <h3 class="news_title">Participating in annual mobility conference</h3>
+        <h6 class="news_detail">Korea Heralds, 14th Jan 2020</h6>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <img class="img" src="dark3.png" alt="" id="dark3">
+        <h3 class="news_title">GAJA starts petition in outlawing hailing services</h3>
+        <h6 class="news_detail">JoongAngDaily, 12th Jan 2020</h6>
+      </div>
+      </div>
+
+      <div class="row" id="four">
+        <div class="col-12 title">
+          <h4>GAJA Members</h4>
+        </div>
+        <div class="w-100"></div>
+        <div class="news col-xl-3 col-lg-3 col-md-3 col-sm-12">
+          <img class="img" src="member1.png" id="mem1">
+          <h3 class="news_title" >Yoonjin Chang</h3>
+          <p class="news_detail">CEO of GAJA</p>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+          <img class="img" src="member2.png" id="mem2">
+          <h3 class="news_title">Minsoo Kim</h3>
+          <p class="news_detail">PR Manager of GAJA</p>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+          <img class="img" src="member3.png" id="mem3">
+          <h3 class="news_title">Hyeyoung Choi</h3>
+          <p class="news_detail">Associate Researcher of GAJA</p>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+          <img class="img" src="member4.png" id="mem4">
+          <h3 class="news_title">Yurim Kim</h3>
+          <p class="news_detail">Visual Designer of GAJA</p>
+        </div>
+      </div>
+
+      <div class="row" id="five">
+        <div class="col-12">
+          <p style="text-align: center;">Apgujeongro 403 Gangnamgu Seoul, Korea<br>82 10 1234 5678</p>
+        </div>
+      </div>
+
+
+    </div>
+
+</body>
+</html>

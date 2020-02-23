@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+  font-family: 'qanelas_soft_demoextrabold';
+  src: url('qanelassoftdemo-extrabold-webfont.woff2') format('woff2');
+}
+@media screen and (min-width: 700px){
+	html{
+		background-color: #2A294E;
+		height: 100vh;
+	}
+	/* .mainbody{
+	    display: grid;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	  } */
+	.header{
+    margin-top: 6%;
+    margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 7%;
+		height: 5vh;
+  }
+	.content{
+	    display: grid;
+			margin-left: 5%;
+	    margin-right: 5%;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(8, 1fr);
+			align-items: stretch;
+			width: 100%;
+			height: 95vh;
+	  }
+	.project{
+		  display: grid;
+			margin-left: 5%;
+	    margin-right: 5%;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(8, 1fr);
+			align-items: center;
+			justify-content: center;
+			height: 120vh;
+		  }
+	.news{
+			display: grid;
+			margin-left: 5%;
+			margin-right: 5%;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(8, 1fr);
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+
+
+}
+@media screen and (max-width: 1920px){
+
+	.illustration{
+		grid-column: 9/13;
+		grid-row: 13/14;
+	}
+	.illustration img{
+		margin-left: 10%;
+		max-width: 90%;
+	}
+	.illustration_tx{
+		grid-column: 7/13;
+		grid-row: 14/15;
+	}
+	.content{
+		grid-column: 1/9;
+		grid-row: 1/5;
+	}
+	.text{
+		grid-column: 2/7;
+		grid-row: 2/5;
+	}
+	.rainbow-pixel-canvas {
+
+  -ms-touch-action: none;
+      touch-action: none;
+	}
+	#canvas-wrap { position:relative; width:1250px; height:400px }
+	#canvas-wrap canvas { position:absolute; top:0; left:0; z-index:0 }
+	.project_title{
+		grid-column: 6/8;
+		grid-row: 2/3;
+		text-align: center;
+	}
+	.project1{
+		grid-column: 1/5;
+		grid-row: 5/7;
+	}
+	.project1 img{
+		max-width: 80%;
+		margin-left: 10%;
+		margin-bottom: 10%;
+	}
+	.project2{
+		grid-column: 5/9;
+		grid-row: 5/7;
+	}
+	.project2 img{
+		max-width: 80%;
+		margin-left: 10%;
+		margin-bottom: 10%;
+	}
+	.project3{
+		grid-column: 9/13;
+		grid-row: 5/7;
+	}
+	.project3 img{
+		max-width: 80%;
+		margin-left: 10%;
+		margin-bottom: 10%;
+	}
+	.news1{
+		grid-column: 1/4;
+		grid-row: 2/8;
+	}
+	.news1 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news2{
+		grid-column: 4/7;
+		grid-row: 2/8;
+	}
+	.news2 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news3{
+		grid-column: 7/10;
+		grid-row: 2/8;
+	}
+	.news3 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news4{
+		grid-column: 10/13;
+		grid-row: 2/8;
+	}
+	.news4 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news5{
+		grid-column: 1/4;
+		grid-row: 8/11;
+	}
+	.news6{
+		grid-column: 4/7;
+		grid-row: 8/11;
+	}
+	.news7{
+		grid-column: 7/10;
+		grid-row: 8/11;
+	}
+	.news8{
+		grid-column: 10/13;
+		grid-row: 8/11;
+	}
+	.news5 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news6 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news7 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.news8 img{
+		max-width: 95%;
+		margin-left: 2%;
+		margin-bottom: 5%;
+	}
+	.title{
+		float: left;
+		margin-left: 2%;
+	}
+	.date{
+		float: right;
+		margin-right: 2%;
+	}
+
+}
+h3{
+	font-family: 'qanelas_soft_demoextrabold';
+	display: block;
+	color: #FFFFFF;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+}
+h4{
+  font-family: 'qanelas_soft_demoextrabold';
+	display: inline;
+	color: #FFFFFF;
+	font-size: 1.3rem;
+}
+h5{
+	font-family: 'qanelas_soft_demoultralight';
+	display: inline;
+	color: #FFFFFF;
+	font-size: 1rem;
+	text-align: center;
+}
+p{
+	font-family: 'qanelas_soft_demoultralight';
+	/* display: inline; */
+	color: #FFFFFF;
+	text-align: right;
+	line-height: 1.5rem;
+	font-size: 1.1rem;
+}
+h6{
+	font-family: 'qanelas_soft_demoultralight';
+	display: block;
+	color: #FFFFFF;
+	text-align: right;
+	margin-left: 2%;
+	line-height: 1.5rem;
+	font-size: 0.8rem;
+	padding-top: 1%;
+}
